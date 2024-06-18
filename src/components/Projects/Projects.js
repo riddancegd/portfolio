@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import guardiaEscolar from "../../Assets/Projects/guardiaEscolar.png";
+import cscGo from "../../Assets/Projects/cscGo.png";
+import rickandmorty from "../../Assets/Projects/rickandmorty.png";
 
 function Projects() {
   return (
@@ -21,18 +18,45 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {/*
-          <Col md={4} className="project-card">
+
+        <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={cscGo}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              showGitHubButton={false}
+              title="CSC Go"
+              description="An app that allows users of CSC laundry machines to pay for their laundry and monitor the status of it. Also, it has other functions like a digital wallet, mobile inbox and a referral system to earn free laundry cycles"
+              /*ghLink="https://github.com/soumyajit4419/Chatify"*/
+              demoLink="https://play.google.com/store/apps/details?id=com.cscsw.cscgo&hl=en"
             />
           </Col>
-          */}
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={guardiaEscolar}
+              isBlog={false}
+              showGitHubButton={false}
+              title="Guardia Escolar"
+              description="This project consisted of mobile apps for android and iOS, a backend and a web application for the school. 
+              The objective of the system was to enable the parents and teachers to see the times of entrance and exit of the students, 
+              along with many other educational functions like assign and show grades to the parents, etc."
+              /*ghLink="https://github.com/soumyajit4419/Chatify"*/
+              demoLink="https://play.google.com/store/apps/details?id=com.schoolguardian.school_guardian_final&hl=es_PA&gl=US"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={rickandmorty}
+              isBlog={false}
+              showGitHubButton={true}
+              title="Rick & Morty Compose"
+              description="An open source andoid app that shows rick and morty characters along with their description. Made using jetpack compose, MVVM, Dependency Injection and other tools along with good android development practices"
+              ghLink="https://github.com/riddancegd/rickandmorty-compose"
+              // demoLink="https://play.google.com/store/apps/details?id=com.schoolguardian.school_guardian_final&hl=es_PA&gl=US"
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>
