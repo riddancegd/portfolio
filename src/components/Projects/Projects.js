@@ -41,7 +41,7 @@ function Projects() {
               The objective of the system was to enable the parents and teachers to see the times of entrance and exit of the students, 
               along with many other educational functions like assign and show grades to the parents, etc."
               /*ghLink="https://github.com/soumyajit4419/Chatify"*/
-              demoLink="https://play.google.com/store/apps/details?id=com.schoolguardian.school_guardian_final&hl=es_PA&gl=US"
+              demoLink="https://www.youtube.com/watch?v=Y0zKe5GHLe0"
             />
           </Col>
 
